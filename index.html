@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>อย่ากดปุ่มนี้</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="hud">
+    <div class="brand">อย่ากดปุ่มนี้</div>
+    <div class="hud-stat"><small>รอบ</small><b id="round">1 / 20</b></div>
+    <div class="hud-stat"><small>คะแนน</small><b id="score">0</b></div>
+    <div class="hud-stat"><small>Best</small><b id="best">0</b></div>
+  </header>
+
+  <main id="screen" class="screen">
+    <section class="panel">
+      <div class="round-line">
+        <div class="tag" id="tag">เริ่มเกม</div>
+        <div class="danger-dot" aria-hidden="true"></div>
+      </div>
+      <h1 id="title">อย่ากดปุ่มนี้</h1>
+      <p id="message">เกมนี้ง่ายมาก แค่ทำตามคำสั่ง</p>
+      <div class="progress-track"><div id="progress" class="progress-fill"></div></div>
+      <div id="arena" class="arena"></div>
+      <p id="status" class="status">อ่านก่อนทำ</p>
+    </section>
+  </main>
+
+  <section id="result" class="screen hidden">
+    <div class="panel result">
+      <div class="result-mark" id="resultMark">!</div>
+      <div class="tag">จบเกม</div>
+      <h1 id="resultTitle"></h1>
+      <p id="resultMessage"></p>
+      <div class="result-stats">
+        <div><small>รอดถึงรอบ</small><b id="finalRound">0</b></div>
+        <div><small>คะแนน</small><b id="finalScore">0</b></div>
+      </div>
+      <button id="restart" class="main-btn">เล่นใหม่</button>
+    </div>
+  </section>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
